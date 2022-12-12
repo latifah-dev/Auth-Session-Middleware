@@ -167,11 +167,19 @@
             <div class="action">
               <ul class="flex gap-9">
                 <li>
-                  <a
-                    href=""
+                  @if(!session()->get("logged", false))
+                    <a
+                    href="/auth/login"
                     class="hover:bg-[#E91E63]/20 px-5 py-2 rounded-[39px] hover:text-[#E91E63] font-[600] text-[16px]"
                     >LOGIN</a
                   >
+                @else
+                <a
+                    href="/auth/logout"
+                    class="hover:bg-[#E91E63]/20 px-5 py-2 rounded-[39px] hover:text-[#E91E63] font-[600] text-[16px]"
+                    >LOGOUT</a
+                  >
+                @endif
                 </li>
                 <li>
                   <a
