@@ -18,4 +18,10 @@ Route::prefix("product")->group(function(){
 });
 Route::prefix("blog")->group(function(){
     Route::get("/", [BlogController::class, 'index']);
+    Route::get("/add", [BlogController::class, 'create']);
+    Route::post("/store", [BlogController::class, 'store']);
+    Route::get("/detail/{id}", [BlogController::class, 'detail']);
+    Route::get("/edit/{id}", [BlogController::class, 'edit']);
+    Route::put("/update/{id}", [BlogController::class, 'update']);
+    Route::delete("/delete/{id}", [BlogController::class, 'delete']);
 });
