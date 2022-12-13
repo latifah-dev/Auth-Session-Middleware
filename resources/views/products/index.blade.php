@@ -27,6 +27,9 @@
                     class="bg-[#E91E63] px-5 py-2 rounded-[39px] text-white font-[600] text-[16px]"
                     >Add Product</a
                   >
+                  @if (Session::has('status'))
+                  {{Session::get('message')}}
+              @endif
 			<table class="table text-gray-400 border-separate space-y-6 text-sm">
 				<thead class="bg-gray-800 text-gray-500">
 					<tr>

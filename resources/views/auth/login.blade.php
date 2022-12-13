@@ -31,7 +31,7 @@
 						<div class="md:flex md:flex-row md:space-x-4 w-full text-xs">
                                 <div class="w-full flex flex-col mb-3">
                                     <label class="text-xl font-semibold text-gray-600 py-2">Password<abbr title="required">*</abbr></label>
-                                    <input placeholder="masukkan password" class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4" type="text" name="password" id="password">
+                                    <input placeholder="masukkan password" class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4" type="password" name="password" id="password">
                                 </div>
 						</div>
                     </div>

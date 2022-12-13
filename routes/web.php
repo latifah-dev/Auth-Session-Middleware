@@ -6,7 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Controller;
 
-Route::get('/', [Controller::class, 'welcome'])->name('homepage')->middleware(['withAuth']);
+Route::get('/', [Controller::class, 'welcome'])->name('homepage');
 
 Route::prefix("product")->group(function(){
     Route::get("/", [ProductController::class, 'index'])->middleware(['withAuth']);
